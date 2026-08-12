@@ -848,26 +848,25 @@
             border: 1px solid var(--border-light);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             transform-origin: center center;
-            transition: filter 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+            transition: opacity 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
             user-select: none;
             will-change: transform, filter, opacity;
+            backface-visibility: hidden;
         }
 
         /* INACTIVE CARDS: BLACK & WHITE + BLUR */
         .arc-card.inactive {
-            filter: grayscale(100%) blur(2px);
-            opacity: 0.45;
+            opacity: 0.52;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
             border-color: rgba(0, 0, 0, 0.05);
         }
 
         .arc-card.inactive img {
-            filter: grayscale(100%);
+            opacity: 0.78;
         }
 
         /* ACTIVE CARD: FULL COLOR */
         .arc-card.active {
-            filter: grayscale(0%) blur(0px);
             opacity: 1;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
             border-color: rgba(0, 0, 0, 0.15);
@@ -875,7 +874,7 @@
         }
 
         .arc-card.active img {
-            filter: grayscale(0%);
+            opacity: 1;
         }
 
         .arc-img-wrapper {
@@ -892,7 +891,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: filter 0.5s ease, transform 0.6s var(--transition-smooth);
+            transition: opacity 0.35s ease, transform 0.6s var(--transition-smooth);
         }
 
         .arc-card:hover .arc-img-wrapper img {
@@ -1463,7 +1462,7 @@
                                         <span class="p-tag">WebSockets</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_aviation-tech-daezveloppementweb-activity-7374713874958356480-6wvC" target="_blank" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_aviation-tech-daezveloppementweb-activity-7374713874958356480-6wvC" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1482,7 +1481,7 @@
                                         <span class="p-tag">PostGIS</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_dakar-saeznaezgal-datascience-activity-7375870666186801152-PlBW" target="_blank" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_dakar-saeznaezgal-datascience-activity-7375870666186801152-PlBW" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1501,7 +1500,7 @@
                                         <span class="p-tag">Analytics</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_saeznaezgal-dakar-technologie-ugcPost-7376412612059852800-QMgL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_saeznaezgal-dakar-technologie-ugcPost-7376412612059852800-QMgL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1520,7 +1519,7 @@
                                         <span class="p-tag">PostgreSQL</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_saeznaezgal-madeinafrica-techsaeznaezgal-activity-7381643293752741888-2GAd" target="_blank" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_saeznaezgal-madeinafrica-techsaeznaezgal-activity-7381643293752741888-2GAd" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1539,7 +1538,7 @@
                                         <span class="p-tag">TTS Audio</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_geminiapi-streamlit-python-activity-7382386799761043456-HCE4" target="_blank" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_geminiapi-streamlit-python-activity-7382386799761043456-HCE4" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1558,7 +1557,7 @@
                                         <span class="p-tag">PayTech</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://funsen.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://funsen.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1577,7 +1576,7 @@
                                         <span class="p-tag">Automation</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_python-flask-sqlite-activity-7379875036712767488-x2XK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_python-flask-sqlite-activity-7379875036712767488-x2XK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1596,7 +1595,7 @@
                                         <span class="p-tag">LONASE</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://orsy.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://orsy.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1614,7 +1613,7 @@
                                         <span class="p-tag">PostgreSQL</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://tutii.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://tutii.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1633,7 +1632,7 @@
                                         <span class="p-tag">CSS/SASS</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://securipass.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://securipass.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1652,7 +1651,7 @@
                                         <span class="p-tag">Game Dev</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_casse-briques-roguelike-am%C3%A9lior%C3%A9-la-magie-activity-7378439438240002049-4n4S?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_casse-briques-roguelike-am%C3%A9lior%C3%A9-la-magie-activity-7378439438240002049-4n4S?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1674,7 +1673,7 @@ Analyse des Symptômes : L'utilisateur pose des questions ou décrit ses symptô
                                         <span class="p-tag">Excel</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_llm-iagaeznaezrative-intelligenceartificielle-activity-7380923631910125568-Ce95?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://www.linkedin.com/posts/orsy-kewol-1116b0302_llm-iagaeznaezrative-intelligenceartificielle-activity-7380923631910125568-Ce95?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE1YY50BhTeVaqIXL_f8dyUsRAXvh05FIuY" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1693,7 +1692,7 @@ Analyse des Symptômes : L'utilisateur pose des questions ou décrit ses symptô
                                         <span class="p-tag">JavaScript</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://zomo-drxj.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://zomo-drxj.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1713,7 +1712,7 @@ Analyse des Symptômes : L'utilisateur pose des questions ou décrit ses symptô
                                         <span class="p-tag">Gsap</span>
                                     </div>
                                     <div class="arc-actions">
-                                        <a href="https://kongossaclub.onrender.com/" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                                        <a href="https://kongossaclub.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn magnetic">Découvrir <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -2096,10 +2095,13 @@ Analyse des Symptômes : L'utilisateur pose des questions ou décrit ses symptô
                             transformOrigin: "center center"
                         });
 
-                        if (Math.abs(angle) < angleStep * 0.45) {
+                        const shouldBeActive = Math.abs(angle) < angleStep * 0.4;
+                        const isActive = card.classList.contains('active');
+
+                        if (shouldBeActive && !isActive) {
                             card.classList.add('active');
                             card.classList.remove('inactive');
-                        } else {
+                        } else if (!shouldBeActive && isActive) {
                             card.classList.add('inactive');
                             card.classList.remove('active');
                         }
@@ -2113,7 +2115,7 @@ Analyse des Symptômes : L'utilisateur pose des questions ou décrit ses symptô
                     pin: true,
                     start: 'top top',
                     end: () => `+=${totalCards * 450}`,
-                    scrub: 0.8,
+                    scrub: 0.35,
                     onUpdate: (self) => {
                         progressObj.value = self.progress * (totalCards - 1);
                         updateArcPositions();
